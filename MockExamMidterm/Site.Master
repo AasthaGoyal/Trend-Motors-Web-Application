@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MockExamMidterm.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+        <link rel="stylesheet" type="text/css" href="CSS/StyleSheet1.css" />
+   
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td> <h1 class="heading"> Welcome to Burger King</h1></td>
+        </tr>
+        <tr>
+            <td class="links"><a href="AddOrder.aspx"> Add Order </a> | <a href="ShowAllOrders.aspx"> Show All orders</a> | <a href="WebForm3.aspx"> Show Total Amount</a></td>
+        </tr>
+        <tr>
+            <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td ><h1 class="heading">This is the footer</h1></td>
+        </tr>
+    </table>
+        <div>
+        </div>
+    </form>
+</body>
+</html>

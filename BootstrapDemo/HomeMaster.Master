@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="BootstrapDemo.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="StyleSheets/EmpLogin.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link href="Content/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="Content/site.css" rel="stylesheet" /> 
+    <script src="Scripts/jquery-1.9.1.min.js"></script> 
+    <script src="Scripts/bootstrap.min.js"></script>
+
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    .auto-style3 {
+        overflow: hidden;
+        background-color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 70px;
+    }
+    .auto-style4 {
+        text-align: right;
+    }
+h1{font-size:2.5rem}h1{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{margin-top:0;margin-bottom:.5rem}*{text-shadow:none!important;box-shadow:none!important}*{box-sizing:border-box}p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}
+    </style>
+
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+        <table class="table table" style="background-color: #000000; width:100%">
+            <tr>
+                <td rowspan="2">
+                    <asp:Image class="logo  img-rounded " ID="Image1" runat="server" Height="97px" Width="298px" src="resources/comLogo.jpg" />
+                </td>
+                <td class="auto-style4">
+                    <asp:Image ID="Image5" runat="server" Height="36px" Width="44px" style="background-color:white" src="Resources/email.png" />
+                    &nbsp;<asp:Label ID="Label2" runat="server" Text="trendmotorsnz@gmail.com" Font-Bold="True" Font-Size="Large" ForeColor="#FFFFCC"></asp:Label>
+                    </td>
+                    <td class="auto-style4" >
+                        <asp:Image ID="Image2" runat="server" Height="36px" Width="44px" style="background-color:white" src="Resources/phone.png" />
+                    &nbsp;<asp:Label ID="Label1" runat="server" Text="0223133707" Font-Bold="True" Font-Size="Large" ForeColor="#FFFFCC"></asp:Label>
+                 <td class="auto-style4">
+                     <asp:ImageButton src="resources/home.png" ID="ImageButton1" runat="server" Height="52px" OnClick="ImageButton1_Click" Width="74px" />
+                </tr>
+             <tr>
+                 <td colspan="3" class="auto-style4"> 
+                     <div class="auto-style3 navbar">
+  <a href="default.aspx">Home</a>
+  <a href="Vehicles.aspx">Vehicles</a>
+  <div class="dropdown">
+    <button class="dropbtn">Finance 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="AboutFinance.aspx">About Finance</a>
+      <a href="ApplyFinance.aspx">Apply For Finance</a>
+ 
+    </div>
+  </div> 
+                 <a href="https://www.facebook.com/pg/Trendmotorsnz/reviews/?ref=page_internal"> Reviews</a>
+                 <a href="Faq.aspx"> FAQ</a>
+                 <a href="ContactUs.aspx"> Contact Us</a>
+                 <a href="AboutUs.aspx"> About Us</a>
+</div>
+
+                 </td>
+             </tr>
+       
+        </table>
+      
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                    </asp:ContentPlaceHolder>
+       
+     <footer>
+         <br />
+         <br />
+         <div="container">
+         <table  style="background-color: #000000; width:100% ">
+             <tr >
+                 <td class="col-sm-4" style="color: #FF3300; font-weight: bold">
+                     <h3> About Us</h3>
+
+                 </td>
+                 <td class="col-sm-4" style="color: #FF3300; font-weight: bold">
+                     <h3> Quick Links</h3>
+                 </td>
+                 <td class="col-sm-4" style="color: #FF3300; font-weight: bold">
+                    <h3>Our Timings:</h3> 
+                 </td>
+             </tr>
+             <tr>
+                 <td class="col-sm-4" rowspan="2" style="color: #FFFFFF"> Buy the car of your dreams!!!<br />
+                     Get an affordable car loan fast!<br />
+                     Our loans can be approved in under an hour <br />
+                     (Bad Credit, Learners License, No License)
+                 </td>
+                 <td class="col-sm-4" rowspan="2" style="color: #FFFFFF; text-decoration: none;">
+                     <a href="Vehicles.aspx"> Vehicles</a><br />
+                     <a href="AboutFinance.aspx"> About Finance</a><br />
+                     <a href="ApplyFinance.aspx"> Apply For Finance</a><br />
+                     <a href="https://web.facebook.com/pg/Trendmotorsnz/reviews/?ref=page_internal"> Reviews</a><br />
+                     <a href="EmployeeLogin.aspx"> Employee Login</a>
+                 </td>
+                 <td class="col-sm-4" style="color: #FFFFFF" >
+                     Monday to Friday: 9:00am to 6:00pm<br />
+                     Saturday & Sunday: 9:00am to 6:00pm <br />
+                     
+
+                 </td>
+                 
+             </tr>
+             <tr>
+               <td class="auto-style4">  <asp:ImageButton ID="ibLogin" src="resources/user.png" onClick="ibLogin_OnClick" runat="server" Height="41px" Width="50px" />
+                  <br /> <label style="color: #FFFFFF"> Login</label> </td>   </tr>
+             </table>
+             </div>
+    </footer>
+         </div>
+    </form>
+
+  
+
+     </body>
+
+   
+</html>

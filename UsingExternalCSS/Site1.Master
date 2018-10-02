@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="UsingExternalCSS.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        
+    </title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <center>
+                  <asp:Image ID="Image1" src="resources/ais logo.jpg" runat="server" Height="139px" Width="483px" />
+        
+            </center>
+              
+        </div>
+        <div class="Contents">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p class="contents">
+                    Home | Contact Us | About Us</p>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <center>
+                 Auckland Institutes of Studies
+  
+            </center>
+                 </div>
+    </form>
+</body>
+</html>

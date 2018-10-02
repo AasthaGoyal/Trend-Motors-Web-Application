@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MidTermTest.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head   runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 401px;
+        }
+        .auto-style2 {
+            height: 183px;
+        }
+        .auto-style3 {
+            height: 189px;
+            
+        }
+        .auto-style4 {
+            height: 35px;
+            text-align:center;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Image ID="Image1"  src="Resources/ais logo.jpg" runat="server" Height="156px"  ImageAlign="Middle" Width="732px" />
+                    </td>
+                </tr>
+                <tr>
+                   
+                    <td class="auto-style4">
+                        <h2 style="background-color: #FF0000">
+                        <a href="home.aspx"> Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="login.aspx"> Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Register.aspx"> Register</a>
+                            </h2>
+                    </td>
+            
+                </tr>
+                <tr>
+                            <td class="auto-style3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 style="width: auto; background-color: #FF0000;"> (c) Auckland Institutes of Studies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;
+                            <asp:Image ID="Image2" src="Resources/facebook logo.jpg" runat="server" Height="20px" Width="31px" />
+&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                            <asp:Image ID="Image3" src="Resources/Twiter logo.jpg" runat="server" Height="20px" Width="31px" />
+&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;
+                            <asp:Image ID="Image4" src="Resources/Youtube logo.jpg" runat="server" Height="20px" Width="31px" />
+                        </h2>  
+                        
+                    </td>
+                </tr>
+                </table>
+    </form>
+</body>
+</html>

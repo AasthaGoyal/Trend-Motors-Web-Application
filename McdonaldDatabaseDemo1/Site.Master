@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="McdonaldDatabaseDemo1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 266px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table class="auto-style1">
+                    <tr>
+                        <td>Place your company logo here</td>
+                    </tr>
+                    <tr>
+                        <td>This is for </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">Contents here</td>
+                    </tr>
+                    <tr>
+                        <td>Place the Footer here</td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

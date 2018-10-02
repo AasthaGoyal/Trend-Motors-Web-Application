@@ -1,0 +1,18 @@
+﻿div.header
+{
+   background-color:green;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+div.footer {
+    background-color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p.contents{
+    text-align:center;
+    font-family:Candara;
+    background-color:lightgreen;
+}

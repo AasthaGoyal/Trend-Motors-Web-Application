@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="TrendMotors2.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+        <style type="text/css">
+        .auto-style6 {
+            width: 644px;
+        }
+
+        </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+         .auto-style8 {
+            width: 320px;
+        }
+          .auto-style15 {
+            width: 756px;
+        }
+        .auto-style16 {
+            width: 321px;
+        }
+        .auto-style17 {
+            width: 322px;
+        }
+        .auto-style18 {
+            width: 324px;
+        }
+        .auto-style19 {
+            width: 333px;
+        }
+        .auto-style20 {
+            margin-left: 0px;
+        }
+        .auto-style21 {
+            width: 299px;
+        }
+            
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+  *,
+  *::before,
+  *::after {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+        .auto-style22 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+         <table style="background-color: #FF6600; text-align:center; font-family:'Comic Sans MS'; font-size:large">
+                <tr>
+                    <td class="auto-style6">   Contact us:  022 121 5737    </td>
+                    <td class="auto-style19">  Email: trendmotorsnz@gmail.com </td>
+                    <td class="auto-style15">  
+                        <asp:Button ID="btnLogout" runat="server" BackColor="#FF9900" BorderStyle="Solid" OnClick="btnLogin_Click" Text="Logout" Width="157px" />
+                    </td>
+                    </tr>
+                </table>
+                <div  style="background-color:black;" class="auto-style22">
+                       <img src="resources/newCompanyLogo.jpg" height="500" width="1200"/>
+         
+                </div>
+            <table style="background-color: #FF6600; width:100%; text-align:center; font-family:'Comic Sans MS'; font-size:large">
+                  <tr>
+                     <td class="auto-style19" > <a href="AddNewCar.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold">Add New Car for Sale </a></td>
+                    <td class="auto-style8" > <a href="Sellcar.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold"> Sell a Car</a> </td>
+                     <td class="auto-style8" s> <a href="EditCar.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold"> Edit/Delete Cars</a> </td>
+                     <td class="auto-style8" "> <a href="AddNewStaff.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold"> Add Staff</a></td>
+                    <td class="auto-style8"> <a href="EditStaff.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold">Edit/Delete Staff</a></td>
+                    <td class="auto-style21" > <a href="AddNewReview.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold"> Add Customer Review</a></td>
+
+                    <td class="auto-style21" > <a href="EditCustomerReview.aspx" style="color: #000000; font-size: large; font-family: Calibri; font-weight: bold"> Edit/Delete Customer Review</a></td>
+
+                </tr>
+            </table>
+               
+       
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+      <div class="auto-style9" style="font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: bold; ">
+     
+          <table  style="border: thin solid #000000; background-color: #FF6600; width:100%; color: #000000; font-size: medium; font-weight: bold; font-family: 'Comic Sans MS';  " class="auto-style22">
+                <tr>
+                    <td class="auto-style13" style="font-size: x-large; background-color: #000000; color: #FFFFFF;">About Us:<br /></td>
+                    <td style="font-size: x-large; background-color: #000000; color: #FFFFFF;" class="auto-style8">Contact Us:<br /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style11" style="font-size: large">Buy the car of your dreams!
+                </td>
+                    <td class="auto-style10" style="font-size: large">
+                        <asp:Image ID="Image2" src="Resources/email.png" runat="server" Height="29px" Width="32px" />
+                            Trendmotorsnz@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="auto-style13" style="font-size: large">Get an affordable car loan fast.</td>
+                    <td class="auto-style12" style="font-size: large">
+                        <asp:Image ID="Image3" src="Resources/address.png" runat="server" Height="23px" Width="29px" />
+&nbsp;Manukau, New Zealand</td>
+                </tr>
+                <tr>
+                    <td class="auto-style13" style="font-size: large">Our loans can be approved in under an hour!</td>
+                    <td class="auto-style14" style="font-size: large">
+                        <asp:Image ID="Image4" src="Resources/phone.png" runat="server" Height="19px" Width="25px" />
+&nbsp;Vish&nbsp; +64 22 017 5022</td>
+                </tr>
+                <tr>
+                    <td class="auto-style13" style="font-size: large">(Bad credit, Learner License, No License)
+
+                </td>
+                    <td class="auto-style16" style="font-size: large"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style13" style="font-size: x-large; background-color: #000000; color: #FFFFFF;"></td>
+                    <td class="auto-style4" style="font-size: x-large; background-color: #000000; color: #FFFFFF;">Opening Hours:</td>
+                </tr>
+                <tr>
+                    <td class="auto-style13" rowspan="2" style="font-size: x-large; background-color: #000000;">
+                        <asp:Image ID="Image5" runat="server" src="resources/fb.png" Height="62px" Width="77px" />
+                        <br /><a href="https://web.facebook.com/Trendmotorsnz/">Like us on Facebook </a></td>
+                    <td class="auto-style17" style="font-size: large">Monday to Friday - 9:00am to 6:00pm</td>
+                </tr>
+                <tr>
+                    <td class="auto-style18" style="font-size: large">Saturday &amp; Sunday - 9:00am to 6:00pm</td>
+                </tr>
+            </table>
+   </div>
+      
+      
+</body>
+</html>
